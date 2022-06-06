@@ -9,16 +9,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Initial commit.">
+    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Fix default example and use jakarta servlet.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/helperobjects/ShoppingItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/AddItemServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/HelloServlet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -94,7 +101,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1653118923907</updated>
-      <workItem from="1653118925053" duration="1079000" />
+      <workItem from="1653118925053" duration="2080000" />
+      <workItem from="1653831137101" duration="2100000" />
+      <workItem from="1653865753053" duration="7252000" />
+      <workItem from="1654484870655" duration="342000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
@@ -103,7 +113,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653119523551</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix default example and use jakarta servlet.">
+      <created>1653120139811</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653120139811</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -122,6 +139,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit." />
+    <MESSAGE value="Fix default example and use jakarta servlet." />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix default example and use jakarta servlet." />
   </component>
 </project>
