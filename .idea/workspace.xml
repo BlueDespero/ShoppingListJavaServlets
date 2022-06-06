@@ -9,10 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Add category functionality">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" afterDir="false" />
+    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Adding css">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/shopping_basket.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,10 +52,14 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "I:/Studia/ZaawJava/ShoppingListJavaServlets/src/main/webapp",
     "list.type.of.created.stylesheet": "CSS"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="I:\Studia\ZaawJava\ShoppingListJavaServlets\src\main\webapp" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shopping.shoppinglistjavaservlets" />
     </key>
@@ -159,7 +164,7 @@
       <workItem from="1653118925053" duration="2080000" />
       <workItem from="1653831137101" duration="2100000" />
       <workItem from="1653865753053" duration="7252000" />
-      <workItem from="1654484870655" duration="9634000" />
+      <workItem from="1654484870655" duration="11702000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
@@ -203,7 +208,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654491547208</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Adding css">
+      <created>1654494967886</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1654494967886</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -227,6 +239,7 @@
     <MESSAGE value="Increase, decrease mechanics" />
     <MESSAGE value="Add new item" />
     <MESSAGE value="Add category functionality" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add category functionality" />
+    <MESSAGE value="Adding css" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding css" />
   </component>
 </project>

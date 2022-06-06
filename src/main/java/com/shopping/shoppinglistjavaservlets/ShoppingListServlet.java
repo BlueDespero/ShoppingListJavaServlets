@@ -9,7 +9,6 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -44,12 +43,11 @@ public class ShoppingListServlet extends HttpServlet {
     }
 
     private void list_category(Map.Entry<String, HashMap<String, ShoppingItem>> category) {
-        this.out.println(String.format("<form action=/ShoppingListJavaServlets/additem>",category.getKey()));
+        this.out.println(String.format("<form action=/ShoppingListJavaServlets/additem>", category.getKey()));
         this.out.println("<fieldset>");
         this.out.println("<legend>" + category.getKey() + "</legend>");
 
-        for (Map.Entry<String, ShoppingItem> item : category.getValue().entrySet())
-        {
+        for (Map.Entry<String, ShoppingItem> item : category.getValue().entrySet()) {
             list_item(item.getValue());
         }
 
@@ -105,8 +103,11 @@ public class ShoppingListServlet extends HttpServlet {
 
         this.out.println("<html><body>");
 
+        this.out.println("<img src=\"shopping_basket.png\" alt=\"Shopping backet\" width=\"500\" height=\"500\">");
+        this.out.println("<div class=\"main\">");
         this.list_all_categories(cart);
         this.add_category_form();
+        this.out.println("</div>");
 
         this.out.println("</body></html>");
     }
