@@ -20,7 +20,14 @@ public class ShoppingListServlet extends HttpServlet {
     private PrintWriter out;
 
     private void add_category_form() {
+        this.out.println("<div>");
+        this.out.println("<form action=/ShoppingListJavaServlets/addcategory>");
+        this.out.println("<label for=name>New category:</label>");
+        this.out.println("<input id=name name=name type=text>");
+        this.out.println("<button>Add</button>");
+        this.out.println("</form>");
 
+        this.out.println("</div>");
     }
 
     private void add_item_form(String category) {
@@ -39,7 +46,7 @@ public class ShoppingListServlet extends HttpServlet {
     }
 
     private void list_category(Map.Entry<String, HashMap<String, ShoppingItem>> category) {
-        this.out.println(String.format("<form action=/ShoppingListJavaServlets/additem?category=%s>",category.getKey()));
+        this.out.println(String.format("<form action=/ShoppingListJavaServlets/additem>",category.getKey()));
         this.out.println("<fieldset>");
         this.out.println("<legend>" + category.getKey() + "</legend>");
         this.out.println("<ul>");
