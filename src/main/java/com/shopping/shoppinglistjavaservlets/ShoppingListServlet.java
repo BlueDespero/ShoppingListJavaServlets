@@ -1,6 +1,9 @@
 package com.shopping.shoppinglistjavaservlets;
 
 import com.shopping.helperobjects.ShoppingItem;
+import jakarta.servlet.ServletConfig;
+import jakarta.servlet.ServletContext;
+import jakarta.servlet.annotation.WebInitParam;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,11 +12,12 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 
-@WebServlet(name = "shoppingList", value = "/shoppinglist")
+@WebServlet(name = "shoppingList", value = "/shoppinglist", initParams = {
+        @WebInitParam(name="categories", value="diary meat" )
+})
 public class ShoppingListServlet extends HttpServlet {
 
     private PrintWriter out;
@@ -62,7 +66,7 @@ public class ShoppingListServlet extends HttpServlet {
     private void remove_category(String key) {
         this.out.println("<div style=\"display: flex; justify-content: center;\">");
         this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/removecat?category=%s\">", key));
-        this.out.println("<input type=\"button\" value=\"Remove\" class=\"prettybutton\" />");
+        this.out.println("<input type=\"button\" value=\"Remove\" />");
         this.out.println("</a>");
         this.out.println("</div>");
     }
@@ -74,7 +78,7 @@ public class ShoppingListServlet extends HttpServlet {
         this.out.println(item.name);
         this.out.println("</div>");
 
-        this.out.println("<div style=\"position: absolute;left: 50%; transform: translateX(-50%); display: inline-block;\">");
+        this.out.println("<div style=\"position: absolute;left: 45%; transform: translateX(-45%); display: inline-block;\">");
         this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/increaseitem?category=%s&item=%s\">", item.category, item.name));
         this.out.println("<input type=\"button\" value=\"+\" />");
         this.out.println("</a>");
@@ -84,7 +88,7 @@ public class ShoppingListServlet extends HttpServlet {
         this.out.println("</a>");
         this.out.println("</div>");
 
-        this.out.println("<div style=\"position: absolute;left: 90%; transform: translateX(-90%); display: inline-block;\">");
+        this.out.println("<div style=\"position: absolute;left: 80%; transform: translateX(-80%); display: inline-block;\">");
         this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/removeitem?category=%s&item=%s\">", item.category, item.name));
         this.out.println("<input type=\"button\" value=\"Remove\" />");
         this.out.println("</a>");
@@ -109,11 +113,14 @@ public class ShoppingListServlet extends HttpServlet {
         HttpSession session = request.getSession();
 
         if (null == session.getAttribute("cart")) {
-            HashMap<String, ShoppingItem> diary = new HashMap<>();
-            diary.put("milk", new ShoppingItem("milk", "diary", 1));
-            diary.put("cheese", new ShoppingItem("cheese", "diary", 2));
+            String categories = getInitParameter("categories");
+            String[] cat_list = categories.split(" ");
             HashMap<String, HashMap<String, ShoppingItem>> cart_put = new HashMap<>();
-            cart_put.put("diary", diary);
+            for (String cat:
+                 cat_list) {
+                cart_put.put(cat, new HashMap<>());
+            }
+
             session.setAttribute("cart", cart_put);
         }
 
@@ -126,10 +133,22 @@ public class ShoppingListServlet extends HttpServlet {
 
         this.out.println("<html><body>");
 
-        this.out.println("<img src=\"shopping_basket.png\" alt=\"Shopping backet\" width=\"500\" height=\"500\">");
+        this.out.println("<div>");
+        this.out.println("</div>");
         this.out.println("<div class=\"main\">");
+        this.out.println("<img src=\"shopping_basket.png\" alt=\"Shopping backet\" width=\"500\" height=\"500\">");
         this.list_all_categories(cart);
         this.add_category_form();
+
+
+        ServletContext servletContext = getServletContext();
+        String author = servletContext.getInitParameter("author");
+        String author_mail = servletContext.getInitParameter("author_mail");
+        this.out.println("<footer>");
+        this.out.println(String.format("Author: %s  ||", author));
+        this.out.println(String.format("<a href=\"mailto:%s\">%s</a>", author_mail, author_mail));
+        this.out.println("</footer>");
+
         this.out.println("</div>");
 
         this.out.println("</body></html>");

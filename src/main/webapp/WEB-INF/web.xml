@@ -8,4 +8,13 @@
         <session-timeout>1</session-timeout>
     </session-config>
 
+    <context-param>
+        <param-name>author</param-name>
+        <param-value>Cezary Troska</param-value>
+    </context-param>
+    <context-param>
+        <param-name>author_mail</param-name>
+        <param-value>ctjavazaawansowana@gmail.com</param-value>
+    </context-param>
+
 </web-app>
