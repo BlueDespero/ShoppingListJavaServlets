@@ -10,7 +10,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Adding css">
-      <change afterPath="$PROJECT_DIR$/src/main/webapp/shopping_basket.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" afterDir="false" />
@@ -47,15 +46,15 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "I:/Studia/ZaawJava/ShoppingListJavaServlets/src/main/webapp",
-    "list.type.of.created.stylesheet": "CSS"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;I:/Studia/ZaawJava/ShoppingListJavaServlets/src/main/webapp&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="I:\Studia\ZaawJava\ShoppingListJavaServlets\src\main\webapp" />
@@ -165,6 +164,7 @@
       <workItem from="1653831137101" duration="2100000" />
       <workItem from="1653865753053" duration="7252000" />
       <workItem from="1654484870655" duration="11702000" />
+      <workItem from="1654512288294" duration="1620000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
