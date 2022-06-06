@@ -60,11 +60,11 @@ public class ShoppingListServlet extends HttpServlet {
     private void list_item(ShoppingItem item) {
         this.out.println("<div>");
 
-        this.out.println("<div style=\"float: left; display: inline-block\">");
+        this.out.println("<div style=\"float: left; display: inline-block;\">");
         this.out.println(item.name);
-        this.out.println("</div");
+        this.out.println("</div>");
 
-        this.out.println("<div style=\"margin: 0 auto; width: 100px; display: inline-block\">");
+        this.out.println("<div style=\"position: absolute;left: 50%; transform: translateX(-50%); display: inline-block;\">");
         this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/increaseitem?category=%s&item=%s\">", item.category, item.name));
         this.out.println("<input type=\"button\" value=\"+\" />");
         this.out.println("</a>");
@@ -72,9 +72,10 @@ public class ShoppingListServlet extends HttpServlet {
         this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/decreaseitem?category=%s&item=%s\">", item.category, item.name));
         this.out.println("<input type=\"button\" value=\"-\" />");
         this.out.println("</a>");
-        this.out.println("</div");
+        this.out.println("</div>");
 
         this.out.println("</div>");
+        this.out.println("<br>");
 
     }
 
