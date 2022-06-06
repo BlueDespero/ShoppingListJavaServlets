@@ -23,12 +23,23 @@ public class ShoppingListServlet extends HttpServlet {
 
     }
 
-    private void add_item_form() {
+    private void add_item_form(String category) {
+        this.out.println("<li>");
+        this.out.println("<div>");
 
+        this.out.println(String.format("<input type = \"hidden\" name = \"category\" value = %s />\n", category));
+        this.out.println("<label for=name>New item:</label>");
+        this.out.println("<input id=name name=name type=text>");
+        this.out.println("<label for=name>Initial amount:</label>");
+        this.out.println("<input id=name name=amount type=number>");
+        this.out.println("<button>Add</button>");
+
+        this.out.println("</div>");
+        this.out.println("</li");
     }
 
     private void list_category(Map.Entry<String, HashMap<String, ShoppingItem>> category) {
-        this.out.println("<form id=payment>");
+        this.out.println(String.format("<form action=/ShoppingListJavaServlets/additem?category=%s>",category.getKey()));
         this.out.println("<fieldset>");
         this.out.println("<legend>" + category.getKey() + "</legend>");
         this.out.println("<ul>");
@@ -36,7 +47,7 @@ public class ShoppingListServlet extends HttpServlet {
         for (Map.Entry<String, ShoppingItem> item : category.getValue().entrySet())
             list_item(item.getValue());
 
-        this.add_item_form();
+        this.add_item_form(category.getKey());
 
         this.out.println("</ul>");
         this.out.println("</fieldset>");
@@ -47,7 +58,7 @@ public class ShoppingListServlet extends HttpServlet {
         this.out.println("<li>");
         this.out.println("<div>");
 
-        this.out.println(item.name + "         ");
+        this.out.println(item.name);
 
         this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/increaseitem?category=%s&item=%s\">", item.category, item.name));
         this.out.println("<input type=\"button\" value=\"+\" />");
