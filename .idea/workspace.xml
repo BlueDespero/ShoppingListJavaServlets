@@ -9,8 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Add new item">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/AddCategoryServlet.java" afterDir="false" />
+    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Add category functionality">
+      <change afterPath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -22,6 +23,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -44,13 +46,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "list.type.of.created.stylesheet": "CSS"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.shopping.shoppinglistjavaservlets" />
@@ -156,7 +159,7 @@
       <workItem from="1653118925053" duration="2080000" />
       <workItem from="1653831137101" duration="2100000" />
       <workItem from="1653865753053" duration="7252000" />
-      <workItem from="1654484870655" duration="6476000" />
+      <workItem from="1654484870655" duration="9634000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
@@ -193,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654491073603</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add category functionality">
+      <created>1654491547208</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1654491547208</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -216,6 +226,7 @@
     <MESSAGE value="Base shopping servlets" />
     <MESSAGE value="Increase, decrease mechanics" />
     <MESSAGE value="Add new item" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add new item" />
+    <MESSAGE value="Add category functionality" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add category functionality" />
   </component>
 </project>

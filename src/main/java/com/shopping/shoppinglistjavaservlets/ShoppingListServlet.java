@@ -31,7 +31,6 @@ public class ShoppingListServlet extends HttpServlet {
     }
 
     private void add_item_form(String category) {
-        this.out.println("<li>");
         this.out.println("<div>");
 
         this.out.println(String.format("<input type = \"hidden\" name = \"category\" value = %s />\n", category));
@@ -42,27 +41,25 @@ public class ShoppingListServlet extends HttpServlet {
         this.out.println("<button>Add</button>");
 
         this.out.println("</div>");
-        this.out.println("</li");
     }
 
     private void list_category(Map.Entry<String, HashMap<String, ShoppingItem>> category) {
         this.out.println(String.format("<form action=/ShoppingListJavaServlets/additem>",category.getKey()));
         this.out.println("<fieldset>");
         this.out.println("<legend>" + category.getKey() + "</legend>");
-        this.out.println("<ul>");
 
         for (Map.Entry<String, ShoppingItem> item : category.getValue().entrySet())
+        {
             list_item(item.getValue());
+        }
 
+        this.out.println("<br>");
         this.add_item_form(category.getKey());
-
-        this.out.println("</ul>");
         this.out.println("</fieldset>");
         this.out.println("</form>");
     }
 
     private void list_item(ShoppingItem item) {
-        this.out.println("<li>");
         this.out.println("<div>");
 
         this.out.println(item.name);
@@ -76,7 +73,6 @@ public class ShoppingListServlet extends HttpServlet {
         this.out.println("</a>");
 
         this.out.println("</div>");
-        this.out.println("</li");
     }
 
     private void list_all_categories(HashMap<String, HashMap<String, ShoppingItem>> cart) {
@@ -103,6 +99,9 @@ public class ShoppingListServlet extends HttpServlet {
 
         HashMap<String, HashMap<String, ShoppingItem>> cart = (HashMap<String, HashMap<String, ShoppingItem>>) session.getAttribute("cart");
 
+        this.out.println("<head>");
+        this.out.println("<link rel=\"stylesheet\" href=\"mainstyle.css\">");
+        this.out.println("</head>");
 
         this.out.println("<html><body>");
 
