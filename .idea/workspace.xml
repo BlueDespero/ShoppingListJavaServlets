@@ -9,8 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Inline try">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Center add buttons">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -163,7 +162,7 @@
       <workItem from="1653831137101" duration="2100000" />
       <workItem from="1653865753053" duration="7252000" />
       <workItem from="1654484870655" duration="11702000" />
-      <workItem from="1654512288294" duration="2328000" />
+      <workItem from="1654512288294" duration="2644000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
@@ -221,7 +220,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654514009336</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Center add buttons">
+      <created>1654514889401</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1654514889401</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -247,6 +253,7 @@
     <MESSAGE value="Add category functionality" />
     <MESSAGE value="Adding css" />
     <MESSAGE value="Inline try" />
-    <option name="LAST_COMMIT_MESSAGE" value="Inline try" />
+    <MESSAGE value="Center add buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="Center add buttons" />
   </component>
 </project>

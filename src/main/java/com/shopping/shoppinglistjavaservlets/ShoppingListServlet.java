@@ -74,6 +74,13 @@ public class ShoppingListServlet extends HttpServlet {
         this.out.println("</a>");
         this.out.println("</div>");
 
+        this.out.println("<div style=\"position: absolute;left: 90%; transform: translateX(-90%); display: inline-block;\">");
+        this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/removeitem?category=%s&item=%s\">", item.category, item.name));
+        this.out.println("<input type=\"button\" value=\"Remove\" />");
+        this.out.println("</a>");
+        this.out.println("</div>");
+
+
         this.out.println("</div>");
         this.out.println("<br>");
 
