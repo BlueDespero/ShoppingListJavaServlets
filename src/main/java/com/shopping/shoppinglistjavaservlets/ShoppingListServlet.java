@@ -1,7 +1,6 @@
 package com.shopping.shoppinglistjavaservlets;
 
 import com.shopping.helperobjects.ShoppingItem;
-import jakarta.servlet.ServletConfig;
 import jakarta.servlet.ServletContext;
 import jakarta.servlet.annotation.WebInitParam;
 import jakarta.servlet.annotation.WebServlet;
@@ -12,11 +11,12 @@ import jakarta.servlet.http.HttpSession;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
 
 
 @WebServlet(name = "shoppingList", value = "/shoppinglist", initParams = {
-        @WebInitParam(name="categories", value="diary meat" )
+        @WebInitParam(name = "categories", value = "diary meat")
 })
 public class ShoppingListServlet extends HttpServlet {
 
@@ -116,8 +116,8 @@ public class ShoppingListServlet extends HttpServlet {
             String categories = getInitParameter("categories");
             String[] cat_list = categories.split(" ");
             HashMap<String, HashMap<String, ShoppingItem>> cart_put = new HashMap<>();
-            for (String cat:
-                 cat_list) {
+            for (String cat :
+                    cat_list) {
                 cart_put.put(cat, new HashMap<>());
             }
 

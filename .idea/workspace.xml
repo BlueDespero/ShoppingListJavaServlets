@@ -9,11 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Remove category">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Fix footer, init param categories list">
       <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +163,7 @@
       <workItem from="1653831137101" duration="2100000" />
       <workItem from="1653865753053" duration="7252000" />
       <workItem from="1654484870655" duration="11702000" />
-      <workItem from="1654512288294" duration="6439000" />
+      <workItem from="1654512288294" duration="6634000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
@@ -251,7 +249,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654516265397</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Fix footer, init param categories list">
+      <created>1654518865203</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1654518865203</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +286,8 @@
     <MESSAGE value="Remove items from basket" />
     <MESSAGE value="Timeout" />
     <MESSAGE value="Remove category" />
-    <option name="LAST_COMMIT_MESSAGE" value="Remove category" />
+    <MESSAGE value="Fix footer, init param categories list" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix footer, init param categories list" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
