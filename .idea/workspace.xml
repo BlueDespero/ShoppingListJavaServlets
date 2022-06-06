@@ -9,11 +9,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Fix default example and use jakarta servlet.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/helperobjects/ShoppingItem.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/AddItemServlet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
+    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Base shopping servlets">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/IncreaseItemServlet.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/HelloServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/DecreaseItemServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/shopping/shoppinglistjavaservlets/ShoppingListServlet.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,12 +53,18 @@
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.shopping.shoppinglistjavaservlets" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="Tomcat 10.0.20" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 10.0.20" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/ShoppingListJavaServlets/shoppinglist" />
       <deployment>
         <artifact name="ShoppingListJavaServlets:war exploded">
           <settings>
-            <option name="CONTEXT_PATH" value="/ShoppingListJavaServlets_war_exploded" />
+            <option name="CONTEXT_PATH" value="/ShoppingListJavaServlets" />
           </settings>
         </artifact>
       </deployment>
@@ -70,6 +76,54 @@
       <predefined_log_file id="Tomcat Manager" />
       <predefined_log_file id="Tomcat Host Manager" />
       <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="61864" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
       <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
         <option name="USE_ENV_VARIABLES" value="true" />
         <STARTUP>
@@ -104,7 +158,7 @@
       <workItem from="1653118925053" duration="2080000" />
       <workItem from="1653831137101" duration="2100000" />
       <workItem from="1653865753053" duration="7252000" />
-      <workItem from="1654484870655" duration="342000" />
+      <workItem from="1654484870655" duration="3402000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
@@ -120,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653120139811</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Base shopping servlets">
+      <created>1654485302277</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1654485302277</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -140,6 +201,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit." />
     <MESSAGE value="Fix default example and use jakarta servlet." />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix default example and use jakarta servlet." />
+    <MESSAGE value="Base shopping servlets" />
+    <option name="LAST_COMMIT_MESSAGE" value="Base shopping servlets" />
   </component>
 </project>

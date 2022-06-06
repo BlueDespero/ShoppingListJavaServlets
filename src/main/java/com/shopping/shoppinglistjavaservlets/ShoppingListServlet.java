@@ -14,7 +14,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 
-@WebServlet(name = "helloServlet", value = "/hello-servlet")
+@WebServlet(name = "shoppingList", value = "/shoppinglist")
 public class ShoppingListServlet extends HttpServlet {
 
     private PrintWriter out;
@@ -27,14 +27,14 @@ public class ShoppingListServlet extends HttpServlet {
 
     }
 
-    private void list_category(Map.Entry<String, ArrayList<ShoppingItem>> category) {
+    private void list_category(Map.Entry<String, HashMap<String, ShoppingItem>> category) {
         this.out.println("<form id=payment>");
         this.out.println("<fieldset>");
         this.out.println("<legend>" + category.getKey() + "</legend>");
         this.out.println("<ul>");
 
-        for (ShoppingItem item : category.getValue())
-            list_item(item);
+        for (Map.Entry<String, ShoppingItem> item : category.getValue().entrySet())
+            list_item(item.getValue());
 
         this.add_item_form();
 
@@ -49,16 +49,20 @@ public class ShoppingListServlet extends HttpServlet {
 
         this.out.println(item.name + "         ");
 
-        this.out.println("<button>+</button>");
+        this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/increaseitem?category=%s&item=%s\">", item.category, item.name));
+        this.out.println("<input type=\"button\" value=\"+\" />");
+        this.out.println("</a>");
         this.out.println(item.amount);
-        this.out.println("<button>-</button>");
+        this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/decreaseitem?category=%s&item=%s\">", item.category, item.name));
+        this.out.println("<input type=\"button\" value=\"-\" />");
+        this.out.println("</a>");
 
         this.out.println("</div>");
         this.out.println("</li");
     }
 
-    private void list_all_categories(HashMap<String, ArrayList<ShoppingItem>> cart) {
-        for (Map.Entry<String, ArrayList<ShoppingItem>> category : cart.entrySet())
+    private void list_all_categories(HashMap<String, HashMap<String, ShoppingItem>> cart) {
+        for (Map.Entry<String, HashMap<String, ShoppingItem>> category : cart.entrySet())
             list_category(category);
     }
 
@@ -69,15 +73,17 @@ public class ShoppingListServlet extends HttpServlet {
 
         HttpSession session = request.getSession();
 
+        if (null == session.getAttribute("cart")) {
+            HashMap<String, ShoppingItem> diary = new HashMap<>();
+            diary.put("milk", new ShoppingItem("milk", "diary", 1));
+            diary.put("cheese", new ShoppingItem("cheese", "diary", 2));
+            HashMap<String, HashMap<String, ShoppingItem>> cart_put = new HashMap<>();
+            cart_put.put("diary", diary);
+            session.setAttribute("cart", cart_put);
+        }
 
-        ArrayList<ShoppingItem> diary = new ArrayList<>();
-        diary.add(new ShoppingItem("milk", "diary", 1));
-        HashMap<String, ArrayList<ShoppingItem>> cart_put = new HashMap<>();
-        cart_put.put("diary", diary);
-        session.setAttribute("cart",  cart_put);
 
-
-        HashMap<String, ArrayList<ShoppingItem>> cart = (HashMap<String, ArrayList<ShoppingItem>>) session.getAttribute("cart");
+        HashMap<String, HashMap<String, ShoppingItem>> cart = (HashMap<String, HashMap<String, ShoppingItem>>) session.getAttribute("cart");
 
 
         this.out.println("<html><body>");
