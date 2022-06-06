@@ -53,8 +53,18 @@ public class ShoppingListServlet extends HttpServlet {
 
         this.out.println("<br>");
         this.add_item_form(category.getKey());
+        this.out.println("<br>");
+        this.remove_category(category.getKey());
         this.out.println("</fieldset>");
         this.out.println("</form>");
+    }
+
+    private void remove_category(String key) {
+        this.out.println("<div style=\"display: flex; justify-content: center;\">");
+        this.out.println(String.format("<a href=\"/ShoppingListJavaServlets/removecat?category=%s\">", key));
+        this.out.println("<input type=\"button\" value=\"Remove\" class=\"prettybutton\" />");
+        this.out.println("</a>");
+        this.out.println("</div>");
     }
 
     private void list_item(ShoppingItem item) {

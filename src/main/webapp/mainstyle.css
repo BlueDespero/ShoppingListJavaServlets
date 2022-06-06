@@ -106,6 +106,16 @@ form button {
     text-transform: uppercase;
 }
 
+.prettybutton{
+    background: #384313;
+    border-radius: 20px;
+    color: #ffffff;
+    font: 18px Georgia, "Times New Roman", Times, serif;
+    letter-spacing: 1px;
+    text-shadow: 0 1px 1px #000000;
+    text-transform: uppercase;
+}
+
 form button:hover {
     background: #1e2506;
     cursor: pointer;
