@@ -115,7 +115,7 @@ form button:hover {
     cursor: pointer;
 }
 
-from input[type=button] {
+form input[type=button] {
     background: #384313;
     border-radius: 20px;
     color: #ffffff;
