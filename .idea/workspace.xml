@@ -9,9 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Formatting">
+    <list default="true" id="0f30e21a-6772-46ee-b0a9-32207c921f07" name="Changes" comment="Correct css bug">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/mainstyle.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +50,8 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;last_opened_file_path&quot;: &quot;I:/Studia/ZaawJava/ShoppingListJavaServlets/src/main/webapp&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;
   }
 }</component>
   <component name="RecentsManager">
@@ -166,6 +166,8 @@
       <workItem from="1654512288294" duration="8137000" />
       <workItem from="1655058774814" duration="2984000" />
       <workItem from="1655117225265" duration="624000" />
+      <workItem from="1656619585615" duration="484000" />
+      <workItem from="1656739728960" duration="2000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit.">
       <created>1653119523551</created>
@@ -265,7 +267,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654518995023</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Correct css bug">
+      <created>1656619682181</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1656619682181</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +306,8 @@
     <MESSAGE value="Remove category" />
     <MESSAGE value="Fix footer, init param categories list" />
     <MESSAGE value="Formatting" />
-    <option name="LAST_COMMIT_MESSAGE" value="Formatting" />
+    <MESSAGE value="Correct css bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="Correct css bug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
